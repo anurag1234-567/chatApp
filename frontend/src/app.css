@@ -1,0 +1,175 @@
+*{
+    padding: 0px; margin:0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+body{
+    color: white;
+    font-size:24px;
+}
+/* chat.js */
+.header{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 10vh;
+    background: linear-gradient(135deg, red, orange);
+}
+.container{
+    height:90vh;
+    display:flex;
+    background:black;
+}
+.sidebar{
+    height: 90vh;
+    width: 20vw;
+    overflow: auto;
+}
+.sidebar h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 16px;
+}
+.active-users{
+    border: 1px solid transparent;
+    text-align:center;
+    padding:12px 8px;
+    margin: 20px 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+.active-users:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+.main{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+.chatbody{
+    height: 80vh;
+    overflow-y: auto;
+    background: rgba(255,255,255, 0.15);
+}
+.ch1{
+    height: 42vh;
+}
+.message-wrp{
+    margin-bottom:3px;
+    display: flex;
+    margin: 20px 25px;
+}
+.right{
+  justify-content: right;
+}
+.message{
+    max-width: 49%;
+}
+.username {
+    color: rgba(255,255,255, 0.75);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding:0px 0px 2px 4px;
+}
+.message-content{
+    background: rgb(0, 174, 255);
+    padding: 10px;
+    border-radius: 5px;
+    overflow-wrap:break-word;
+}
+.footer{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding:0px 20px;
+}
+.ch2{
+    height: 48vh;
+}
+.chatbar{
+    display:flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.type-bar{
+    width: 90%;
+    padding:10px;
+    font-size: 20px;
+    background: transparent;
+    color: rgba(255,255,255,0.9);
+    border: 1px solid grey;
+    border-radius: 2px;
+    margin-right: 25px;
+    outline: none;
+}
+.type-bar:focus{
+  box-shadow: 0px 0px 10px rgb(0, 174, 255);
+}
+.emoji{
+    color: grey;
+    margin-right: 12px;
+}
+.footer .send{
+    padding: 8px 10px;
+    background:rgb(0, 183, 255);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.footer .send:hover{
+    cursor: pointer;
+    background: rgb(0, 174, 255);
+}
+
+/* home.js */
+.login-page{
+    height: 100vh; 
+    /* width: 100vw; */
+    /* font-size: 30px; */
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0, 0.83);
+}
+.login-page form{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    /* width: fit-content; */
+    border-radius: 5px;
+    background: rgba(255,255,255, 0.08);
+    box-shadow: 0px 0px 8px grey;
+}
+.login-page .username{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.login-page form input[type='text']{
+    background: transparent;
+    border: 1px solid grey;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    outline: none;
+    margin-bottom: 25px;
+    border-radius: 3px;
+}
+.login-page .join{
+    background: rgb(0, 183, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.login-page .join:hover{
+    cursor: pointer;
+    background: rgb(0, 204, 255);
+}
